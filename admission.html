@@ -22,80 +22,21 @@
 
 <div class="content"></div>
 
-<form action="send_form_email.php" method="post" style="max-width: 700px; margin: auto; background: #f6c6c6; padding: 20px; border-radius: 10px;">
-  <h2 style="text-align:center;">छात्र की जानकारी</h2>
+<form action="https://formspree.io/f/xrblbwyj" method="POST">
+  <label for="name">पूरा नाम:</label><br>
+  <input type="text" id="name" name="name" required><br><br>
 
-  <div style="display: flex; gap: 10px;">
-    <div style="flex: 1;">
-      <label>नाम:</label><br>
-      <input type="text" name="student_name" required style="width:100%;">
-    </div>
-    <div style="flex: 1;">
-      <label>पिता का नाम:</label><br>
-      <input type="text" name="father_name" required style="width:100%;">
-    </div>
-  </div><br>
+  <label for="email">ईमेल:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
 
-  <div style="display: flex; gap: 10px;">
-    <div style="flex: 1;">
-      <label>जन्म तिथि:</label><br>
-      <input type="date" name="dob" required style="width:100%;">
-    </div>
-    <div style="flex: 1;">
-      <label>लिंग:</label><br>
-      <select name="gender" required style="width:100%;">
-        <option value="">चयन करें</option>
-        <option value="male">पुरुष</option>
-        <option value="female">महिला</option>
-        <option value="other">अन्य</option>
-      </select>
-    </div>
-  </div><br>
+  <label for="phone">मोबाइल नंबर:</label><br>
+  <input type="tel" id="phone" name="phone" required><br><br>
 
-  <label>पता:</label><br>
-  <textarea name="address" rows="2" required style="width:100%;"></textarea><br><br>
+  <label for="message">पता / अन्य जानकारी:</label><br>
+  <textarea id="message" name="message" rows="4" required></textarea><br><br>
 
-  <label>कक्षा में प्रवेश:</label><br>
-  <select name="class" required style="width:100%;">
-    <option value="">कक्षा चुनें</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">7</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-  </select><br><br>
-
-  <h3>दस्तावेज़ अपलोड करें</h3>
-
-  <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-    <div style="flex: 1 1 48%;">
-      <label>फोटो:</label><br>
-      <input type="file" name="student_photo" accept=".jpg,.jpeg,.png" required style="width:100%;">
-    </div>
-    <div style="flex: 1 1 48%;">
-      <label>आधार कार्ड:</label><br>
-      <input type="file" name="aadhaar_card" accept=".pdf,.jpg,.jpeg,.png" required style="width:100%;">
-    </div>
-    <div style="flex: 1 1 48%;">
-      <label>मार्कशीट:</label><br>
-      <input type="file" name="marksheet" accept=".pdf" required style="width:100%;">
-    </div>
-    <div style="flex: 1 1 48%;">
-      <label>TC:</label><br>
-      <input type="file" name="tc" accept=".pdf" required style="width:100%;">
-    </div>
-  </div><br>
-
-  <input type="submit" value="फॉर्म सबमिट करें" style="width:100%; padding:10px; background-color:rgb(239, 251, 6); color:rgb(241, 90, 14); font-size:16px; border:none; border-radius:5px;">
-</form>  <p>आप यहाँ एडमिशन प्रक्रिया और फॉर्म जोड़ सकते हैं।</p>
-</div>
+  <button type="submit">फॉर्म सबमिट करें</button>
+</form>
 
 </body>
 </html>
